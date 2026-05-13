@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const Eleve = require('../models/Eleve');
-const Classe = require('../models/Classe');
-const auth = require('../middleware/Auth');
+const Eleve = require('../models/eleve');
+const Classe = require('../models/classe');
+const auth = require('../middleware/auth');
 
 // GET /api/eleves/:classe_id — Récupérer les élèves d'une classe
 router.get('/:classe_id', auth, async (req, res) => {

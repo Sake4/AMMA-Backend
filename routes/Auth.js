@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const Professeur = require('../models/Professeur');
-const Classe = require('../models/Classe');
+const Professeur = require('../models/professeur');
+const Classe = require('../models/classe');
 
 // POST /api/auth/inscription
 router.post('/inscription', async (req, res) => {
